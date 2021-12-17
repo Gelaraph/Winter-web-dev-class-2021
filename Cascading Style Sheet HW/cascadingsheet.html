@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Afro Fem Coding</title>
+        <link rel="stylesheet" href="Cascadingsheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>CASCADING STYLE SHEET (CSS)</h1>
+        <p> CSS (<span class="abrev">C</span>ascading <span class="abrev">S</span>tyle <span class="abrev">S</span>heets) is used for adding styles (e.g. fonts, colors, spacing)
+             to Web documents. <br>The format for saving a CSS file is "the name .css" <br>
+            <br>e.g: style.css</p>
+        
+        <p>To apply CSS to an HTML element you need to select the element
+            and CSS provides you with a number of different ways to select the elements 
+            and apply rules to them. <br> But to understand how selectors work and their role in CSS,
+             it's important to know the parts of a <span id="rule">CSS rule.</span></p> 
+            <blockquote>
+                <p>A CSS rule is a block of code, containing one 
+                    or more selectors and one or more declarations.</p>
+            </blockquote> <br>
+            
+        <h2>Anatomy of a CSS ruleset</h2>
+         <p> A style sheet consists of a list of rules and  
+            each rule or rule-set consists of one or more selectors, and a declaration block.</p>
+           
+         <p>Let's disect how CSS actually works using this diagram:</p>
+           <figure>
+               <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png"
+               alt="CSS ruleset anatomy" height="200px" width="400px" /> 
+               <figcaption id="itallic">The whole structure is called a ruleset.</figcaption>
+           </figure><br>
+           <h3>Explanation of the diagram</h3>
+           <ul>
+             <li>
+                 <h4>Selectors</h4>
+                 <p> This is the HTML element name at the start of the ruleset. 
+                     It defines the element(s) to be styled in the example.
+                     <br>  To style a different element, change the selector.</p>
+             </li>
+             <li>
+                 <h4>Properties</h4>
+                <p>In this example color is a property of the p element.
+                    In CSS, you choose which properties you want to affect to the element.</p>
+             <li>
+                <h4>Property value</h4>
+                <p>To the right of the property—after the colon—there is the property value. 
+                    This chooses one out of many possible appearances for a given property. 
+                    (For example, there are many color values in addition to red.)</p>
+             </li>
+             <li>
+                 <h4>Declaration</h4>
+                <p>A declaration block includes a CSS property name and a property value
+                     pair which applies styles to the elements matched by the selectors. 
+                It should be noted however that a rule can contain more than
+                one declaration and are separated by semicolons.<br>
+                Also, declaration blocks are surrounded by curly braces.</p>
+             </li>
+        </ul>
+         <br>
+          <h2>CSS SELECTORS</h2>  
+          <p>CSS selectors are used to "find" (or select)
+             the HTML elements you want to style and there are many different types of selectors.<br>
+             Here are some of the most common types of selectors:</p>   
+    <br>
+        <table>
+            <thead id="head">
+                <td>Selector Name</td>
+                <td>What it selects</td>
+                <td>Example</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Element selector <br>(sometimes called a tag <br>or type selector)</td>
+                    <td>All HTML elements of the specified type.</td>
+                    <td>p selects paragraph tag </td>
+                </tr>
+                <tr>
+                    <td>ID Selector</td>
+                    <td>The element on the page with the specified ID on a given HTML page, Each id value should be unique.</td>
+                        <td>#my-id
+                            selects <p id="my-id"> or<br> <a id="my-id"> </td>
+                </tr>
+                <tr>
+                    <td>Class Selector</td>
+                    <td>The element(s) on the page with the specified class. 
+                        <br>Multiple instances of the same class can appear on a page.</td>
+                    <td>img[src]
+                        selects [img src="myimage.png"] <br>but not img tag </td>  
+                </tr>
+                <tr>
+                    <td>Pseudo-class selector</td>
+                    <td>The specified element(s), <br>
+                        but only when in the specified state. <br>
+                        (For example, when a cursor hovers over a link.)</td>
+                        <td>a:hover
+                            selects <a>, but only when <br>the mouse pointer is hovering over the link.</td>
+                </tr>
+                <tr>
+                    <td>Attribute selector</td>
+                    <td>The element(s) on the page with the specified attribute.</td>
+                    <td>img[src]
+                        selects [img src="myimage.png"] but not img tag </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    <footer>
+        <p>There are many more selectors to discover. To learn more, see the MDN 
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors" 
+        target="_blank"> Selectors guide.</a></p>
+        <p>Also visit <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">
+             Mozilla website</a> and 
+            <a href="https://www.w3schools.com/css/default.asp">W3school</a> to know more about CSS.</p>
+    </footer>
+    </body>
+</html>
